@@ -29,7 +29,6 @@ function sumArray(array) {
         console.log('-----------------------');
     }, 1000)
 }
-
 // console.log(sumArray(array));
 
 const students =[
