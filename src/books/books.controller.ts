@@ -24,13 +24,13 @@ export class BooksController {
   }
 
   // Update a book
-  @Patch('/books/:id')
+  @Patch('/books/update/:id')
   updateBook(@Param('id') id: number, @Body() updateBook: Books) {
     return this.booksService.updateBook(+id, updateBook);
   }
 
   // Delete a book
-  @Delete('/books/:id')
+  @Delete('/books/delete/:id')
   deleteBook(@Param('id') id: number) {
     return this.booksService.deleteBook(+id);
   }
