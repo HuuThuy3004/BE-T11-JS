@@ -11,6 +11,11 @@ export class BooksController {
   getAllBooks() {
     return this.booksService.getAllBooks();
   }
+  // Get detail a book
+  @Get('/books/detail/:id')
+  getDetailBook(@Param('id') id: string) {
+    return this.booksService.getDetailBook(+id);
+  }
 
   // Add a new book
   @Post('/books/add')

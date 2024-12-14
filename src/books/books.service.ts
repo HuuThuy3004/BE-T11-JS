@@ -37,6 +37,10 @@ export class BooksService {
   getAllBooks(): Books[] {
     return this.books;
   }
+  // Get Detail Book
+  getDetailBook(id: number): any {
+    return this.books[id-1]
+  }
   // Add New Book
   addBook(book: Books): any {
     const bookExists = this.books.some((b) => b.id === book.id);
